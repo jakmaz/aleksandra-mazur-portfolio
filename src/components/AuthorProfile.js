@@ -18,7 +18,7 @@ function AuthorProfile() {
             <div className="flex items-center justify-center bg-white">
                 <div className="mx-auto flex w-fit flex-col items-center justify-center">
                     <img src="/images/author-image.jpg" alt="Author" className="w-72 rounded-md shadow-2xl"/>
-                    <div className="mt-8 text-sm text-gray-600 max-w-72">
+                    <div className="mt-4 text-sm text-slate-900 max-w-72">
                         Laureatka Ogólnopolskiego Konkursu Literackiego "Pisanie Dobre Na Chandrę" Oświęcim, 2017 rok
                     </div>
                     <p className="relative left-32 mt-2 -rotate-12 transform text-5xl text-gray-800 font-handwritten">Aleksandra</p>
