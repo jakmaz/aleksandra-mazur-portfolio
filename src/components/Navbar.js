@@ -2,7 +2,7 @@ export default function Navbar() {
     return (
         <div className="bg-white shadow-md">
             <div className="text-center pt-7">
-                <span className="text-3xl font-semibold text-gray-800">Aleksandra Mazur</span>
+                <span className="text-3xl font-noticia font-bold text-gray-800">Aleksandra Mazur</span>
             </div>
             <nav className="flex justify-center p-5">
                 <div className="flex space-x-20">

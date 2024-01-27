@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        noticia: ["'Noticia Text'", 'serif'],
+        handwritten: ["'Mr De Haviland'", 'serif']
+      }
+    },
   },
   plugins: [],
 }
