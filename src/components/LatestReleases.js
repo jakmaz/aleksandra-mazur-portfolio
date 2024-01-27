@@ -16,8 +16,8 @@ export default function LatestReleases() {
     }, []);
 
     return (
-        <div className="bg-white my-10">
-            <h2 className="text-5xl font-noticia font-bold text-center mt-40 mb-10">Ostatnie wydania</h2>
+        <div className="my-10 bg-white">
+            <h2 className="mt-40 mb-10 text-center text-5xl font-bold font-noticia">Ostatnie wydania</h2>
             <div className="flex justify-center space-x-20">
                 {books.map((book, index) => (
                     <div key={book.id} className={`flex flex-col items-center ${index === 1 ? 'mt-40' : ''}`}>

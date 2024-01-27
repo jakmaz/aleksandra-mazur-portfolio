@@ -5,7 +5,7 @@ function AuthorProfile() {
         <div className="grid w-full grid-cols-1 h-svh md:grid-cols-2">
             <div className="bg-[#E6E9E6] flex items-center justify-center">
                 <div>
-                    <h1 className="mb-4 text-8xl font-noticia font-bold text-gray-900">
+                    <h1 className="mb-4 text-8xl font-bold text-gray-900 font-noticia">
                         Aleksandra <br/>
                         <span className="block">Mazur</span>
                     </h1>
@@ -21,7 +21,7 @@ function AuthorProfile() {
                     <div className="mt-8 text-sm text-gray-600 max-w-72">
                         Laureatka Ogólnopolskiego Konkursu Literackiego "Pisanie Dobre Na Chandrę" Oświęcim, 2017 rok
                     </div>
-                    <p className="mt-2 text-5xl transform -rotate-12 relative left-32 text-gray-800 font-handwritten">Aleksandra</p>
+                    <p className="relative left-32 mt-2 -rotate-12 transform text-5xl text-gray-800 font-handwritten">Aleksandra</p>
                 </div>
             </div>
         </div>
