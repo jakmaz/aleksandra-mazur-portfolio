@@ -1,6 +1,4 @@
-import React from 'react';
-
-function Navbar() {
+export default function Navbar() {
     return (
         <div className="bg-white shadow-md">
             <div className="text-center pt-7">
@@ -18,5 +16,3 @@ function Navbar() {
         </div>
     );
 }
-
-export default Navbar;

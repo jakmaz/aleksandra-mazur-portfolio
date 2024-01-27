@@ -10,7 +10,7 @@ function AuthorProfile() {
                         <span className="block">Mazur</span>
                     </h1>
                     <p className="mb-6 text-xl text-gray-700">Author of the best-selling books...</p>
-                    <button className="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700">
+                    <button className="rounded bg-white px-4 py-2 font-bold hover:bg-slate-100">
                         Kup powieść
                     </button>
                 </div>

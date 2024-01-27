@@ -1,9 +1,13 @@
-import {Previews} from '@react-buddy/ide-toolbox'
+import {ComponentPreview, Previews} from '@react-buddy/ide-toolbox'
 import {PaletteTree} from './palette'
+import Navbar from "../components/Navbar";
 
 const ComponentPreviews = () => {
     return (
         <Previews palette={<PaletteTree/>}>
+            <ComponentPreview path="/Navbar">
+                <Navbar/>
+            </ComponentPreview>
         </Previews>
     )
 }
