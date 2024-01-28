@@ -3,8 +3,8 @@ import React from 'react';
 function AuthorProfile() {
     return (
         <div className="flex flex-wrap md:h-svh">
-            <div className="bg-[#E6E9E6] flex items-center w-full md:w-1/2 h-full">
-                <div className="flex flex-col space-y-6 mx-auto p-10 text-center md:text-left">
+            <div className="bg-[#E6E9E6] flex items-center justify-center w-full md:w-1/2 h-full">
+                <div className="flex flex-col space-y-6 p-10 text-center md:text-left">
                     {/* This h1 will only show on medium screens and larger */}
                     <h1 className="text-3xl md:text-5xl lg:text-8xl font-bold leading-tight text-gray-900 font-noticia">
                         <span className="hidden md:block">Aleksandra </span>
