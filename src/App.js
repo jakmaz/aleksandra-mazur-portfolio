@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import AuthorProfile from './components//AuthorProfile';
 import LatestReleases from "./components/LatestReleases";
 import Reviews from "./components/Reviews";
+import Footer from "./components/Footer";
 
 export default function App() {
     return (
@@ -10,6 +11,7 @@ export default function App() {
             <AuthorProfile />
             <LatestReleases />
             <Reviews />
+            <Footer />
         </div>
     );
 }
