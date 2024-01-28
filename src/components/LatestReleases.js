@@ -12,17 +12,17 @@ export default function LatestReleases() {
             setBooks(booksData);
         };
 
-        fetchBooks();
+        // fetchBooks();
     }, []);
 
     return (
         <div className="my-10 bg-white">
-            <h2 className="mt-40 mb-10 text-center text-5xl font-bold font-noticia">Ostatnie wydania</h2>
-            <div className="flex justify-center space-x-20">
+            <h2 className="mt-10 mb-10 text-center text-4xl md:text-5xl font-bold font-noticia">Ostatnie wydania</h2>
+            <div className="flex flex-wrap justify-center space">
                 {books.map((book, index) => (
-                    <div key={book.id} className={`flex flex-col items-center ${index === 1 ? 'mt-40' : ''}`}>
-                        <img src={book.cover} alt={book.title} className="mb-4 w-full" />
-                        <h3 className="text-lg font-bold">{book.title}</h3>
+                    <div key={book.id} className={`flex flex-col justify-center items-center h-fit ${index === 1 ? 'mt-6 md:mt-32' : ''}`}>
+                        <img src={book.cover} alt={book.title} className="mb-2 w-full" />
+                        <h3 className="text-xl md:text-2xl font-noticia font-bold">{book.title}</h3>
                     </div>
                 ))}
             </div>
