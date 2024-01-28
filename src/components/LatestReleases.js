@@ -12,7 +12,7 @@ export default function LatestReleases() {
             setBooks(booksData);
         };
 
-        // fetchBooks();
+        fetchBooks();
     }, []);
 
     return (
