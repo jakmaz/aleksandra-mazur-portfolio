@@ -9,7 +9,7 @@ export default function App() {
             <Navbar />
             <AuthorProfile />
             <LatestReleases />
-            {/*<Reviews />*/}
+            <Reviews />
         </div>
     );
 }
