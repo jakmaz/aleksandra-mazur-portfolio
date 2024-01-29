@@ -7,6 +7,7 @@ import AboutPage from "./pages/AboutPage";
 import BooksPage from "./pages/BooksPage";
 import ReviewsPage from "./pages/ReviewsPage";
 import ContactPage from "./pages/ContactPage";
+import BookDetails from "./components/BooksDetails";
 
 export default function App() {
     return (
@@ -17,6 +18,7 @@ export default function App() {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/books" element={<BooksPage />} />
+                    <Route path="/books/:book" element={<BookDetails />} /> {/* Add this line */}
                     <Route path="/reviews" element={<ReviewsPage />} />
                     <Route path="/contact" element={<ContactPage />} />
                 </Routes>

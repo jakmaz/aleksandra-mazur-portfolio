@@ -1,8 +1,9 @@
 import React from "react";
 import useFetchBooks from "../hooks/useFetchBooks";
+import {Link} from "react-router-dom";
 
 export default function BooksPage () {
-    const books = useFetchBooks(2); // Limit to 2 books
+    const books = useFetchBooks(); // Limit to 2 books
 
     return (
         <div
@@ -12,16 +13,15 @@ export default function BooksPage () {
             </div>
             <div className="flex flex-wrap justify-center">
                 {books.map((book, index) => (
-                    <div key={book.id} className={`flex flex-col justify-center items-center w-80`}>
+                    <Link
+                        to={`/books/${book.title.split(" ").join("-").toLowerCase()}`}
+                        state={{bookInfo: book}}
+                        key={book.id}
+                        className={`flex flex-col justify-center items-center w-80`}
+                    >
                         <img src={book.cover} alt={book.title} className="mb-2 w-full" />
                         <h3 className="text-xl font-bold font-noticia md:text-2xl">{book.title}</h3>
-                    </div>
-                ))}
-                {books.map((book, index) => (
-                    <div key={book.id} className={`flex flex-col justify-center items-center w-80`}>
-                        <img src={book.cover} alt={book.title} className="mb-2 w-full" />
-                        <h3 className="text-xl font-bold font-noticia md:text-2xl">{book.title}</h3>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>
