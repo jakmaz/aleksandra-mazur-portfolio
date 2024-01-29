@@ -1,19 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { db } from '../firebase';
-import { collection, getDocs } from 'firebase/firestore';
+import React from 'react';
+import useFetchBooks from '../hooks/useFetchBooks'; // Ensure this path is correct
 
 export default function LatestReleases() {
-    const [books, setBooks] = useState([]);
-
-    useEffect(() => {
-        const fetchBooks = async () => {
-            const snapshot = await getDocs(collection(db, 'books'));
-            const booksData = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })).slice(0, 2); // Slice the array to get only the first two books
-            setBooks(booksData);
-        };
-
-        fetchBooks();
-    }, []);
+    const books = useFetchBooks(2); // Limit to 2 books
 
     return (
         <div className="bg-white py-6 md:py-10">
